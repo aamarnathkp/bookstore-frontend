@@ -1,0 +1,30 @@
+.BFormContainer{
+    position: relative;
+    align-items: center;
+}
+
+.BForm{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 620px;
+    margin: 10%;
+    margin-left: 35%;
+    width: 590px;
+    position: absolute;
+    /*margin: -25px 0 0 -25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center; */
+    border-radius: 8px;
+}
+
+.BFormContent {
+    margin: 25px;
+    margin-top: 40px;
+}
+
+.BFormContentButtons {
+    margin-left: 180px;
+    align-items: center;
+}

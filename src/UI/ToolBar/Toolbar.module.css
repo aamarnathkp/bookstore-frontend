@@ -1,0 +1,76 @@
+.Toolbar {
+    background-color:whitesmoke;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    text-align: right;
+    display: flex;    
+    
+
+}
+
+.Title {
+    text-align: center;
+    display: flex;
+    position: fixed;
+    /* margin-top: 60px; */
+    justify-content: center;
+    right: 0px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4b79b4;
+    
+}
+
+.AppBar{
+    background-color: lightsteelblue;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    margin-top: 61px;
+    text-align: right;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.AppTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin-left: 60px;
+    color: #4b79b4;    
+}
+
+.IconHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.IconHolder:hover{
+    background-color:#4b79b4 ;
+    color:white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.IconHolderActive{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 6px;
+    background-color:#4b79b4 ;
+    color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

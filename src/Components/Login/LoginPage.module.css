@@ -1,0 +1,36 @@
+.Login {
+    margin: auto;
+    margin-top: 300px;
+    /* justify-content: center;
+    align-items: center; */
+    height: 280px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box; 
+    background-color: #dce6ef;
+    color:  #86a9c6;
+    border-radius: 18px;
+}
+
+.Input {
+    display: block;
+    border-radius: 8px;
+}
+
+.CloseIcon{
+    color: lightsteelblue;
+    float: right;
+}
+
+.CloseIcon:hover{
+   color: #86a9c6;
+}
+
+@media (min-width: 600px) {
+    .Login {
+        width: 500px;
+    }
+}

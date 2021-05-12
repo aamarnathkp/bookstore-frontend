@@ -1,0 +1,86 @@
+.Books{
+    display: flex;
+}
+
+.Book{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 300px;
+    margin: 15px;
+    width: 190px;
+    border-radius: 8px;
+    display: table-cell;
+}
+
+.GuestBooks{
+    margin-left: 75px;
+    display: table;
+}
+
+.GuestBook{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 300px;
+    margin: 15px;
+    width: 190px;
+    border-radius: 8px;
+    display: inline-table;
+}
+
+.BookImage {
+    width: 80%;
+    height: 185px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* background-color: #86a9c6; */
+    background-color: lightsteelblue;
+}
+
+.BookTitle {
+    text-align: center;
+    margin-bottom: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.BookTag {
+    display: flex;
+}
+
+.BookPublish {
+    margin-left: 20px;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.BookPrice {
+    margin-left: 65px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.Book:hover {
+    /* background-color:#749dbe; */
+    background-color: #93aed2;
+}
+
+
+
+.AddBook{
+    color: white;
+    display: flex;
+    float: left;
+    margin: 15px;
+    justify-content: right;
+    align-items: center;
+    background-color: lightsteelblue;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.AddBook:hover{
+    background-color: #4b79b4;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

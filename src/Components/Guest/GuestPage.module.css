@@ -1,0 +1,152 @@
+.Container{
+    display: flex;
+    width: 96%;
+    margin: 20px;
+    padding: 15px;
+    height: 350px;    
+    box-shadow: 0 1px 5px grey; 
+    /* background-color: #cbdae7; */
+    background-color: lightsteelblue;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.CountsContainer{
+    display: flex;
+    width: 96%;
+    margin: 20px;
+    padding: 15px;
+    height: 250px;
+    box-shadow: 0 1px 5px grey; 
+    /* background-color: #cbdae7; */
+    background-color: lightsteelblue;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.CountContainerBox {
+    display: flex;
+    width: 98%;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    /* background-color:#eef3f7; */
+    background-color: #dce6ef;
+    height: 195px;
+    padding: 32px;
+    margin: 2px;
+    box-shadow: 0 1px 5px grey inset; 
+    overflow-y:scroll;
+    overflow:hidden;
+}
+
+.Count{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 260px;
+    width: 200px;
+    height: 200px;
+    display:flex;
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #dce6ef; */
+    background-color: lightsteelblue;
+    color: #86a9c6;
+}
+
+.Count:hover{
+    /* background-color:#749dbe; */
+    background-color: #93aed2;
+    color: white;
+}
+
+.CountCircle{
+    box-shadow: 0 1px 5px grey inset;
+    border-radius: 160px;
+    width: 170px;
+    height: 170px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:whitesmoke;
+    color: #86a9c6;
+}
+
+.CountCircle:hover{
+    /* background-color: #dce6ef; */
+    background-color: #edf2f7;
+    /* color: #5083af; */
+    color: #93aed2;
+}
+
+
+.CountText{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-weight:bolder;
+    font-size: xx-large;
+    font-family:fantasy
+}
+
+
+.ItemName{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    width: 280px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: #86a9c6;
+    font-weight:bolder;
+    font-size: xxx-large;
+    font-family:fantasy;
+}
+
+/* .ItemName:hover{
+    background-color:#749dbe;
+    color: white;
+} */
+
+.ItemContainer {
+    display: flex;
+    width: 84%;
+    margin-left: 50px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #dce6ef; */
+    background-color: lightsteelblue;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ItemContainerBox {
+    display: flex;
+    width: 98%;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    /* background-color:#eef3f7; */
+    background-color: #dce6ef;
+    height: 320px;
+    margin: 2px;
+    box-shadow: 0 1px 5px grey inset; 
+    overflow-y:scroll;
+    overflow:hidden;
+}
+
+.ItemBooks{
+    /* height: 180px; */
+    width: 95%;
+}
+
+.LoginSection{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}

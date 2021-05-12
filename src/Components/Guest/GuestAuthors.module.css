@@ -1,0 +1,58 @@
+.AuthorContainer{
+    display: flex;
+    width: auto;
+    margin: 20px;
+    padding: 15px;
+    height: 380px;    
+    box-shadow: 0 1px 5px grey; 
+    /* background-color: #cbdae7; */
+    background-color: lightsteelblue;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Authors{
+    display: flex;
+    height: 340px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    /* overflow-y: scroll; */
+    overflow: hidden;
+    /* overflow-x: scroll; */
+    background-color: #dce6ef;
+    border-radius: 8px;
+    padding: 1px;
+    margin: 1px;
+    box-shadow: 0 1px 5px grey inset;
+}
+
+.Author{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 280px;
+    margin: 15px;
+    width: 250px;
+    border-radius: 8px;
+    display: block;
+}
+
+.AuthorImage {
+    width: 160px;
+    height: 180px;
+    margin: 18px;
+    background-color:lightsteelblue;
+}
+
+
+.AuthorName {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Author:hover {
+    background-color:#93aed2;
+}

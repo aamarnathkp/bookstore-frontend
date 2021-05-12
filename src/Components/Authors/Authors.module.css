@@ -1,0 +1,50 @@
+.Authors{
+    display: inline;
+}
+
+.Author{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 210px;
+    margin: 15px;
+    margin-left: 650px;
+    width: 750px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.AuthorImage {
+    width: 30%;
+    height: 165px;
+    margin: 18px;
+    background-color:lightsteelblue;
+}
+
+.AuthorTag {
+    display: block;
+    margin-top: 10px;
+    height: 180px;
+    width: 470px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+}
+
+.AuthorDescription {
+
+    text-align: left;
+
+    margin: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.AuthorName {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Author:hover {
+    background-color:#93aed2;
+}
+

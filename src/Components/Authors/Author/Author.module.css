@@ -1,0 +1,65 @@
+.Author{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 320px;
+    margin: 15px;
+    width: 98%;
+    border-radius: 8px;
+    display: flex;
+}
+
+
+.AuthorImage {
+    width: 250px;
+    height: 280px;
+    margin: 18px;
+    background-color:lightsteelblue;
+    border-radius: 8px;
+}
+.img{
+    height: 100%;
+    width: auto;
+}
+
+.AuthorTag {
+    display: inline-table;
+    margin-top: 10px;
+    height: 180px;
+    width: 800px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+}
+
+.AuthorDescription {
+
+    text-align: left;
+    margin: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.AuthorName {
+    font-size: 28px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.AddIcon{
+  float: right;
+  margin-right: 30px;
+}
+
+.BookContent{
+    margin-top: 50px;
+    max-width: max-content;
+    display: flex;
+    overflow-y: auto;
+}
+
+.AuthorClose {
+    margin-top: 20px;
+    color: lightsteelblue;
+    margin-left: 5%;
+    margin-right: 1%;
+    text-align: right;
+}

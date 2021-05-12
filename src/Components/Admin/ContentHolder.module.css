@@ -1,0 +1,23 @@
+.Holder{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin-top: 130px;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    position:fixed;
+    align-items: center;    
+}
+
+.HolderContent{
+    height: 99%;
+    width: 98%;
+    /* position: relative; */
+    background-color:white;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    box-shadow: 0 1px 5px grey inset;
+}
+

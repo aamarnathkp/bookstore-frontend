@@ -1,0 +1,24 @@
+.Login {
+    margin: 0 auto;
+    margin-top: 300px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box; 
+    background-color: whitesmoke;
+    color:burlywood;  
+    border-radius: 18px;
+}
+
+.Input {
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .Login {
+        width: 500px;
+    }
+}

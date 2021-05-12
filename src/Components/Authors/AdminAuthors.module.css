@@ -1,0 +1,77 @@
+.Authors{
+    display: block;
+    overflow-y: scroll;
+    /* scroll-behavior: auto; */
+}
+
+.Author{
+    display: flex;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 60px;
+    margin: 15px;
+    width: 98%;
+    /* position: fixed; */
+    border-radius: 8px;
+    align-items: center;
+    color: #4b79b4;
+}
+
+.Author:hover {
+    background-color:#93aed2;
+    color : whitesmoke
+}
+
+
+.AuthorDescription {
+
+    text-align: left;
+    margin: 10px;
+    width: 550px;
+    max-height: 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.AuthorName {
+    margin: 30px;
+    text-align: left;
+    width: 145px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.AuthorIconContainer{
+    /* display: inline;
+    align-items: flex-end; */
+    float: right;
+}
+
+.AuthorIcon {
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+.AuthorIcon:hover{
+    color: #660000
+}
+
+.AddAuthor{
+    color: white;
+    display: flex;
+    float: left;
+    margin: 15px;
+    justify-content: right;
+    align-items: center;
+    background-color: lightsteelblue;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.AddAuthor:hover{
+    background-color: #4b79b4;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
