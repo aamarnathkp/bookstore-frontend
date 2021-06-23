@@ -119,10 +119,10 @@ const MainPage = props => {
     console.log('role = ', role);
 
     return (
-        <div>
+        <>
             {authRedirect}
             {home}
-        </div>
+        </>
     );
 }
 

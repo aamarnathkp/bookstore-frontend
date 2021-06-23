@@ -32,17 +32,17 @@ const GuestPage = props => {
 
 
     return (
-        <div style={{ 'backgroundColor': '#dce6ef' }}>
-            <Wrapper>
+        <div style={{ backgroundColor: '#dce6ef', position: 'relative' }}>
+            {/* <Wrapper> */}
                 <Heading>
                     <IconWrapper>
                         <BookIcon fontSize={'large'} />
                     </IconWrapper>
                     <Button>
-                        <a href="/guest">Books</a>
+                        <a href="/">Books</a>
                     </Button>
                     <Button>
-                        <a href='/guest'>Authors</a>
+                        <a href='/'>Authors</a>
                     </Button>
                     <Login>
                         <IconWrapper>
@@ -52,7 +52,7 @@ const GuestPage = props => {
                         </IconWrapper>
                     </Login>
                 </Heading>
-            </Wrapper>
+            {/* </Wrapper> */}
             {modal}
             <CounterSection />
             <BooksSection />
@@ -65,12 +65,23 @@ const GuestPage = props => {
 
 export default GuestPage;
 
-const Wrapper = styled.div`
-    flex:1;
-`
+// const Wrapper = styled.div`
+//     flex:1;
+// `
+
+
+const Heading = styled.div`
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    position: fixed;
+    background-color: lightsteelblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+`;
+
 const IconWrapper = styled.div`
-    heigth: 50px;
-    padding:10px;
+    padding:6px;
     margin: 8px;
     color: white;
 
@@ -79,29 +90,13 @@ const IconWrapper = styled.div`
     }
 `
 
-const Heading = styled.div`
-    display : flex;
-    top:0;
-    position:fixed;
-    width: 100%;
-    height : 65px;
-    background-color: lightsteelblue;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-`;
-
 const Button = styled.div`
-    display: flex;
-    height: 15px;
-    min-width: 85px;
-    align-items: center;
-    justify-content:center;
     border-radius: 15px;
     cursor: pointer;
     background-color: white;
-    padding: 10px;
-    margin-left:20px;
-    margin-top: 16px;
-    margin-right: 15px;
+    padding: 6px;
+    font-size: 16px;
+    margin: 20px;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     a {
@@ -118,8 +113,5 @@ const Button = styled.div`
 `
 
 const Login = styled.div`
-    display: flex;
-    justify-items: center;
-    margin-left:75%;
-    align-items: center;
+    align-self: end;
 `

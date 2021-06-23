@@ -4,22 +4,31 @@
     position: fixed;
     height: 60px;
     text-align: right;
-    display: flex;    
-    
-
+    display: grid;    
 }
 
-.Title {
+.TitleIcons {
     text-align: center;
     display: flex;
     position: fixed;
-    /* margin-top: 60px; */
     justify-content: center;
     right: 0px;
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: #4b79b4;
     
+}
+
+.Title{
+    text-align: center;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4b79b4;
+
 }
 
 .AppBar{
@@ -49,6 +58,7 @@
     margin-left: 20px;
     margin-right: 20px;
     padding: 5px;
+    width: 134px;
     background-color: white;
     border-radius: 6px;
 }
@@ -64,6 +74,7 @@
 
     display: flex;
     align-items: center;
+    width: 134px;
     justify-content: center;
     margin-left: 20px;
     margin-right: 20px;
@@ -74,3 +85,50 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.ScrollText {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+   }
+   .ScrollText h3 {
+    font-size: 20px;
+    color: whitesmoke;;
+    position: absolute;
+    width: 760px;
+    height: 100%;
+    background-color: lightsteelblue;
+    border-radius: 8px;
+    margin: 10px;
+    /* margin-left: 640px; */
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: ScrollText 15s linear infinite;
+    -webkit-animation: ScrollText 15s linear infinite;
+    animation: ScrollText 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes ScrollText {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes ScrollText {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes ScrollText {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }

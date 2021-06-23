@@ -3,10 +3,12 @@ import PowerSettingsNewSharpIcon from '@material-ui/icons/PowerSettingsNewSharp'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import HomeIcon from '@material-ui/icons/Home';
 import LocalLibraryIcon from '@material-ui/icons/LocalLibrary';
-import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
+import ChatIcon from '@material-ui/icons/Chat';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import PeopleIcon from '@material-ui/icons/People';
-import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import CollectionsBookmarkIcon from '@material-ui/icons/CollectionsBookmark';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+import AssignmentIcon from '@material-ui/icons/Assignment';
 
 import classes from './Toolbar.module.css';
 import Holder from '../../Components/Admin/ContentHolder';
@@ -31,12 +33,17 @@ const Toolbar = props => {
         }
     }
 
+    // const notification = "Quiz for the month of May 2021 are available!! Feel free to give it a shot";
 
     return (
         <>
             <div className={classes.Toolbar}>
-                <div className={classes.Title}>
-                    <p onClick={props.logout}><strong>{props.user}</strong></p>
+                {/* <p className={classes.Title}><strong>Welcome {props.user}</strong></p> */}
+                {/* <div className={classes.ScrollText}>
+                <h3>{notification} </h3>
+                </div> */}
+                <div className={classes.TitleIcons}>
+                    <p style={{margin: '10px'}}><strong>Welcome {props.user}</strong></p>
                     <AccountCircleIcon fontSize={'large'} />
                     <PowerSettingsNewSharpIcon onClick={props.logout} fontSize={'large'} />
 
@@ -59,7 +66,7 @@ const Toolbar = props => {
                     <div
                         onClick={() => onMenuClicked('SHELFS')}
                         className={getClassName('SHELFS')}>
-                        <PhotoLibraryIcon fontSize={'large'} />SHELFS</div>
+                        <CollectionsBookmarkIcon fontSize={'large'} />SHELFS</div>
                     <div
                         onClick={() => onMenuClicked('REQUESTS')}
                         className={getClassName('REQUESTS')}>
@@ -67,7 +74,15 @@ const Toolbar = props => {
                     <div
                         onClick={() => onMenuClicked('CHAT')}
                         className={getClassName('CHAT')}>
-                        <ChatBubbleIcon fontSize={'large'} />CHAT</div>
+                        <ChatIcon fontSize={'large'} />CHAT</div>
+                    <div
+                        onClick={() => onMenuClicked('USERS')}
+                        className={getClassName('USERS')}>
+                        <ContactMailIcon fontSize={'large'} />USERS</div>
+                    <div
+                        onClick={() => onMenuClicked('QUIZ')}
+                        className={getClassName('QUIZ')}>
+                        <AssignmentIcon fontSize={'large'} />QUIZ</div>
                 </div>
             </div>
             <Holder menuClicked={menuClicked} />

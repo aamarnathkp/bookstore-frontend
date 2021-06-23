@@ -31,12 +31,10 @@ const Author = props => {
 
     const { uuid, name, about, image } = props.author;
 
-
     const getBooks = props.books;
     const books = getBooks.filter(book => {
         return uuid === book.author_uuid
     })
-
 
     let authorDetails = null;
     authorDetails = (

@@ -7,109 +7,106 @@ import { checkValidity, updateObject } from '../../utility/utility';
 import * as axios from '../../API/bsAxios';
 
 
-const state = {
-    controls: {
-        title: {
-            elementType: 'input',
-            elementConfig: {
-                type: 'text',
-                placeholder: 'book title'
-            },
-            value: '',
-            validation: {
-                required: true,
-                minLength: 3,
-                maxLength: 50
-            },
-            valid: false,
-            touched: false
-        },
-        description: {
-            elementType: 'input',
-            elementConfig: {
-                type: 'text',
-                placeholder: 'description'
-            },
-            value: '',
-            validation: {
-                required: true,
-                maxLength: 1000
-            },
-            valid: false,
-            touched: false
-        },
-        image: {
-            elementType: 'file',
-            elementConfig: {
-                type: 'file',
-                placeholder: 'price',
-                accept: "image/*"
-            },
-            value: '',
-            validation: {
-                required: true,
-                minLength: 1,
-                maxLength: 5
-            },
-            valid: true,
-            touched: false
-        },
-        price: {
-            elementType: 'input',
-            elementConfig: {
-                type: 'number',
-                placeholder: 'price'
-            },
-            value: '',
-            validation: {
-                required: true,
-                minLength: 1,
-                maxLength: 5
-            },
-            valid: false,
-            touched: false
-        },
-        author: {
-            elementType: 'select',
-            elementConfig: {
-                type: 'text',
-                placeholder: 'publisher'
-            },
-            value: '',
-            validation: {
-                required: false
-            },
-            valid: false,
-            touched: false
-        },
-        publisher: {
-            elementType: 'input',
-            elementConfig: {
-                type: 'text',
-                placeholder: 'publisher'
-            },
-            value: '',
-            validation: {
-                required: true,
-                maxLength: 60
-            },
-            valid: false,
-            touched: false
-        },
-        publishDate: {
-            elementType: 'date-picker',
-            elementConfig: 'published date',
-            value: '',
-            valid: true,
-            touched: false
-        }
-    }
-}
-
-
 const AddBookForm = props => {
 
-    const [inputs, setInputs] = useState(state);
+    const [inputs, setInputs] = useState({
+        controls: {
+            title: {
+                elementType: 'input',
+                elementConfig: {
+                    type: 'text',
+                    placeholder: 'book title'
+                },
+                value: '',
+                validation: {
+                    required: true,
+                    minLength: 3,
+                    maxLength: 50
+                },
+                valid: false,
+                touched: false
+            },
+            description: {
+                elementType: 'input',
+                elementConfig: {
+                    type: 'text',
+                    placeholder: 'description'
+                },
+                value: '',
+                validation: {
+                    required: true,
+                    maxLength: 1000
+                },
+                valid: false,
+                touched: false
+            },
+            image: {
+                elementType: 'file',
+                elementConfig: {
+                    type: 'file',
+                    placeholder: 'price',
+                    accept: "image/*"
+                },
+                value: '',
+                validation: {
+                    required: true,
+                    minLength: 1,
+                    maxLength: 5
+                },
+                valid: true,
+                touched: false
+            },
+            price: {
+                elementType: 'input',
+                elementConfig: {
+                    type: 'number',
+                    placeholder: 'price'
+                },
+                value: '',
+                validation: {
+                    required: true,
+                    minLength: 1,
+                    maxLength: 5
+                },
+                valid: false,
+                touched: false
+            },
+            author: {
+                elementType: 'select',
+                elementConfig: {
+                    type: 'text',
+                    placeholder: 'publisher'
+                },
+                value: '',
+                validation: {
+                    required: false
+                },
+                valid: false,
+                touched: false
+            },
+            publisher: {
+                elementType: 'input',
+                elementConfig: {
+                    type: 'text',
+                    placeholder: 'publisher'
+                },
+                value: '',
+                validation: {
+                    required: true,
+                    maxLength: 60
+                },
+                valid: false,
+                touched: false
+            },
+            publishDate: {
+                elementType: 'date-picker',
+                elementConfig: 'published date',
+                value: '',
+                valid: true,
+                touched: false
+            }
+        }
+    });
     const [isformValid, setFormValidity] = useState(false);
     const [selectedFile, setSelectedFile] = useState(null);
 
@@ -216,7 +213,6 @@ const AddBookForm = props => {
             changed={(event) => inputChangedHandler(event, formElement.id)} />
 
     ));
-
 
 
     return (

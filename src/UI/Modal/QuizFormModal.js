@@ -1,22 +1,16 @@
 import React from 'react';
 import Modal from '@material-ui/core/Modal';
 
-import AuthorForm from '../Form/AuthorForm';
+import QuizForm from '../Form/Quiz/QuizForm';
 
 
 
 
-const authorFormModal = props => {
+const quizFormModal = props => {
 
-    //const [open, setModal] = useState(true);
 
     const body = (
-        <AuthorForm
-            addAuthor = {props.addAuthor}
-            editAuthor = {props.editAuthor}
-            editAuthorDetails = {props.editAuthorDetails}
-            toggleAddAuthor={props.toggleAddAuthor}
-            modalClose={props.modalClose} />
+        <QuizForm modalClose={props.modalClose} />
 
     )
 
@@ -33,4 +27,4 @@ const authorFormModal = props => {
     )
 }
 
-export default authorFormModal;
+export default quizFormModal;

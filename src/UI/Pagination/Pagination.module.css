@@ -1,0 +1,26 @@
+.PaginationContent{
+    margin: 18px;
+    float: right;
+    border-radius: 6px;
+    background-color: whitesmoke;
+}
+
+
+/* Pagination links */
+.pagination div {
+    color: black;
+    float: left;
+    padding: 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+    background-color: l;
+  }
+  
+  /* Style the active/current link */
+  .pagination div.active {
+    background-color: #4b79b4;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .pagination div:hover:not(.active) {background-color: lightsteelblue;}

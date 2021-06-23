@@ -15,7 +15,7 @@
     width: 98%;
     /* position: relative; */
     background-color:white;
-    /* display: flex; */
+    display: block;
     /* justify-content: center;
     align-items: center; */
     box-shadow: 0 1px 5px grey inset;

@@ -1,0 +1,25 @@
+.FormContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.Form{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 320px;
+    width: 590px;
+    border-radius: 8px;
+}
+
+.FormContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.FormContentButtons {
+    align-items: center;
+}

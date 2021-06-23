@@ -1,7 +1,7 @@
 .Authors{
     display: block;
-    overflow-y: scroll;
-    /* scroll-behavior: auto; */
+    /* overflow-y: scroll;
+    scroll-behavior: auto; */
 }
 
 .Author{
@@ -55,7 +55,8 @@
 }
 
 .AuthorIcon:hover{
-    color: #660000
+    color: #660000;
+    background-color: lightsteelblue;
 }
 
 .AddAuthor{
@@ -74,4 +75,9 @@
     background-color: #4b79b4;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.AuthorMenu {
+    height: 60px;
 }

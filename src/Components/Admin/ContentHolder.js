@@ -4,6 +4,8 @@ import classes from './ContentHolder.module.css';
 import Authors from '../Authors/AdminAuthors';
 import Dashboard from '../DashBoard/Dashboard';
 import Books from '../Books/AdminBooks';
+// import Quiz from '../AdminQuiz/AdminQuiz';
+import Quiz from '../AdminQuiz/AdminQuizMUI';
 import * as axios from '../../API/bsAxios';
 
 
@@ -44,6 +46,9 @@ const ContentHolder = props => {
             break;
         case 'BOOKS':
             activeContent = <Books authors={authors} />;
+            break;
+        case 'QUIZ':
+            activeContent = <Quiz />
             break;
         default:
             activeContent = props.menuClicked;

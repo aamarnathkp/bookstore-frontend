@@ -1,0 +1,46 @@
+.Container{
+    /* background-color:burlywood; */
+    display: flex;
+    height: 720px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Item{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40px;
+    margin: 15px;
+    width: 98%;
+    min-width: 450px;
+    padding: 5px;
+    border-radius: 8px;
+    font-size:large;
+    align-items: center;
+    color: #4b79b4;
+}
+
+.Item:hover {
+    background-color:#93aed2;
+    color : whitesmoke
+}
+
+.Menu{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.AddQuiz{
+    color: white;
+    background-color: lightsteelblue;
+    padding: 4px;
+    align-self: center;
+    border-radius: 6px;
+}
+
+.AddQuiz:hover{
+    background-color: #4b79b4;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

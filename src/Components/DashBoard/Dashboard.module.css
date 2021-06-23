@@ -1,0 +1,53 @@
+
+.PieChartBooks{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 350px;
+    margin: 15px;
+    width: 320px;
+    border-radius: 8px;
+}
+
+
+.PieChartTitle{
+    height: 20px;
+    /* margin: 4px; */
+    padding: 10px;
+    background-color: lightsteelblue;
+    color : #4b79b4;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.PieChartGraph{
+    height: 300px;
+    width: 320;
+}
+
+
+.PieChartAuthors{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 350px;
+    margin: 15px;
+    border-radius: 8px;
+    display: block;
+}
+
+.PieChartAuthorsTitle{
+    background-color: lightsteelblue;
+    height: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    color: #4b79b4;
+    justify-content: center;
+}
+
+.AuthorGraph{
+    height: 300px;
+    /* width: 320; */
+}

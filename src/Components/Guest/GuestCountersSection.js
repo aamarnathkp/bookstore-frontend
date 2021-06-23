@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 import classes from './GuestPage.module.css';
 import * as axios from '../../API/bsAxios';
@@ -28,8 +28,7 @@ const GuestCountersSection = props => {
 
     return (
 
-        <div>
-            <div style={{ height: '54px' }}></div>
+        <>
             <div className={classes.CountsContainer}>
                 <div className={classes.CountContainerBox}>
                     <div className={classes.Count}>
@@ -66,7 +65,7 @@ const GuestCountersSection = props => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
 
     );
 }

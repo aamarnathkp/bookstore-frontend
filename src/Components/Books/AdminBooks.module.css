@@ -1,5 +1,6 @@
 .Books{
     display: flex;
+    overflow: scroll;
 }
 
 .Book{
@@ -25,6 +26,25 @@
     width: 190px;
     border-radius: 8px;
     display: inline-table;
+}
+
+.GuestBook:hover {
+    /* background-color:#749dbe; */
+    background-color: #93aed2;
+}
+
+
+.BookEdit{
+    margin-right: 6px;
+    margin-top: 10px;
+    color: #4b79b4;
+    justify-content: right;
+    float: right;
+}
+
+.BookEdit:hover{
+    background-color: whitesmoke;
+    border-radius: 6px;
 }
 
 .BookImage {
@@ -83,4 +103,9 @@
     background-color: #4b79b4;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.BookMenu {
+    height: 60px;
 }
